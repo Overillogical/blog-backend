@@ -2,7 +2,6 @@
 {% load static %}
 {% block title %} {{ post.title }} - Blog Details {% endblock %}
 {% block content %}
-
 <body>
   <section class="mb-30px">
     <div class="container">
@@ -19,7 +18,7 @@
       </div>
     </div>
   </section>
-
+  
   <section class="blog-post-area section-margin">
     <div class="container">
       <div class="row">
@@ -53,7 +52,6 @@
                   </div>
                 </div>
           </div>
-
           <div class="comments-area">
             <h4>{{post.comments|length}} Comments</h4>
             {% for name in post.comments %}
@@ -86,7 +84,6 @@
               </div>
               <button class="bbtns d-block mt-20 w-100">Subcribe</button>
             </div>
-
             <div class="single-sidebar-widget post-category-widget">
               <h4 class="single-sidebar-widget" style="height:200px;">Здесь будет реклама</h4>
             </div>
@@ -95,4 +92,4 @@
       </div>
      </div>
   </section>
-{% endblock %}
+% endblock %
